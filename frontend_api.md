@@ -1,6 +1,6 @@
 Backend API is ready through ngrok.
 
-Base URL: `https://<your-ngrok-url>.ngrok-free.app`
+Base URL: `https://<ngrok-url>.ngrok-free.app`
 
 Use `POST /analyze` as `multipart/form-data` with:
 
