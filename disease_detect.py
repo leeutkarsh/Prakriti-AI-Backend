@@ -1,5 +1,13 @@
 from ultralytics import YOLO
 import os
+from huggingface_hub import hf_hub_download
+
+repo_id = "https://huggingface.co/JK-TK/PlantDiseaseDetection/blob/main/PlantDiseaseDetection.pt"
+
+hf_hub_download(
+    repo_id=repo_id,
+    filename="PlantDiseaseDetection.pt"
+)
 
 def disease_detection(file_path, model_path):
     if not os.path.exists(model_path):
